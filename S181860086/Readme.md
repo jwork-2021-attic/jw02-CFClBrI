@@ -1,0 +1,62 @@
+# W02
+
+## 任务一
+
+### 类图和时序图
+
+example的类图为：
+
+![](http://www.plantuml.com/plantuml/png/bLJ1RXCn4BtlL_XeKDilu50gXL89DLNI1YJ4mSaEYy5hhsmlK0h_pdJ6Ex5pQm-xRyUlxxqPsxbCsSGyZwuxE9EI-c0zgATEuTzTI3RRu3z_KLE1YHP-1jkhQSuQoMRlG3b-dodhixAlYBIi3P1rLTxcQFsWSc2W6p8wvV0sHlE8zNyTHv8S9TQ9wJ5HWbpMJeEH67Ns-lnSzBeESq7yQWuWea-DtCBK2v11S6mf3nMNbr3wkRepRWPkHiW1CnI_hWC_Z-ewpB4ltklRrPcw_xZ6n_lD2l6xzSC6dpSxnDkRJ_XOxLQtOXAFTeBsagu9JLNsmcW4hXutnl_G98H0ijDNQOMdySjCqY9h61_oDuZK75VU_BsuaDQu59g1yuPU0_o1oFqk7wZ4Y4z9Y1cBYLur3NFVBymIBq5ckcx-gpbkpdfuc3H60yBrulFnDZ71dJDU5_w4k6eUViDXph2ifWmJTbsV7xQkZuyBfjT8G7bmC8BFgHudydKJ4JkZ12JC3TBmM7aPtTMynzasRknX25VnswtZAyWNz3jPr4gySQtJzW3oIo1pUy6EoUZ3S8mo6kkrZDt48L4MzYht0gfFDgWALUggp8UwkmJVpwFx3m00)
+
+main方法中的对象时序图为：
+
+![](http://www.plantuml.com/plantuml/png/RSrH3e8m3CRnzvrY5_02F1ZUE83n00G-OKbPITTgzFJ25bmqFgtjB_clJTgBsa8EKOC-FOK8Dp0H1WqSa-_OP3nKPtJ02t8S4elMZNWwneU47VQSFvrBnJT-DNMVo0ubi4c2NlByxJdGvEUw_X1FcmZK9FfxJmPNVgsOztejksnm8qlpFnY84roBEDf2Rm00)
+
+### 设计理念
+
+1. 采用了面向对象的抽象思想，将不同的功能划分为不同的类。
+2. 采用了面向对象的封装思想，采用私有类型保护数据，采用公开类型提供接口。
+3. 采用了内部类的设计，体现出了不同的类之间的组合关系。
+4. 采用了成员对象的设计，体现出了不同的类之间的聚合关系。
+5. 采用了接口-实现的设计，将不同的类均具有的特征抽象成一个接口，并在具体的类中对接口定义的操作通过重写来进行实现。
+
+### 设计的优点
+
+1. 模块划分清晰，模块独立性好，耦合度低，代码可读性好。
+2. 数据保护效果好，不易出错，安全性强，代码逻辑性好。
+3. 类之间的关系清晰明了，与实际中的关系保持一致，形成一个完整的体系。
+4. 代码复用好，代码量小，为不同的类型提供了统一的操作接口，易于实现消息的多态性。
+
+### 可以改进的地方
+
+1. 多个类之间的组合、聚合与实现关系不是很直观，可以修改使得类间关系更加清晰明了。
+2. 存在一些类中的成员变量定义分散在各处的情况，可以将其放在一起，更加直观。
+3. 使用枚举类型依次定义所有葫芦娃，当葫芦娃数量增加时代码量也增加，可扩展性有待改进。
+
+## 任务二
+
+### 类图
+
+任务二的类图为：
+
+![](http://www.plantuml.com/plantuml/png/jLJBRjKm4DtVh_0oHRHVKA6M5KX552wF1MBX9dDptJfsi2Sj2FXtx1dR7KLXKwdPP3AFEUUC9xw8g0CkaztrLiUehem3zNkdqdFjeq7ZtRVlQYvcfC2zDuEQ5-nIihwne2o_NohZK9aJIggn4R0JxZq6uqQ5derE9aD2GdyPWlwL_7ztJAdnABHMe8-C8c29hObHCrBsulIqzTlj4Yy81zr3RSeGhLtDxAhH1i6qctiKkHpAafFtYxOBi9YMx1E7WbSbllCk8WI6fzhGhB5PDm9KS6dn-mosFULdaIMxFkYvfLOrsdayGY3rrNV-v-oigQzEBqwbZcJlz5qz3xPJBpB8LKhJnaniHSxq8JUCz1ArYVEdKlwe91Nt0JJ2H-q6Fqazx2yWiKGY8FVl94muaOGoKZ4trjuQ1v_dl9v0jWmcDhCE4QwjTbt9dvCjMC5Fw1U46aqWCmstxN7LBzROUZrqB1OiJE0mYevPGITPPFx4W1hJmEXukB5m597rk3uifh-hw6B0ccmXPnDxpLGBzu_QcUPfuO1ypmGp7d6B-del-Houw9Pa2RAya6nNBMz0pyyXXHfV3hTBP2t1-wB5WXln-3GnbUssbdqFxK9lQxVzKwt_7hctVgJFrylX0066hy7an0TwKOHkxIiJyVojGnWXl58-3FyFyW_sFgT8YPCsTVdpxC8OIIEfg1SdY4_cthxb6WelZqWuvG9VW1kMoVu3)
+
+### 可视化结果展示
+
+可视化结果展示链接为：
+
+[asciinema.org](https://asciinema.org/a/uGYEOtIoF3Mwlv4MYk0UhkZ7d)
+
+## 任务三
+
+### 类图
+
+任务三的类图为：
+
+![](http://www.plantuml.com/plantuml/png/jLNDRjim3BxxANnKXgLFK0pjJXlGOTsodyEm0sipZbfRSYMwtT3ktMU9aa8l2pOKQ2wYIOhVzqaKS-O974r3Ny6L9mSDrPiTZ5W_LFNykz06hdhyzhqcU-uS_5IhwbTLDJru7u8vxz9wJTgQEN5Cfe-1EwlRUfn8fKfrp-lBMXkgzKgYr1sI4kuDEMsw6PaDjVetfStj1EwGr06jWDAZwMZtFonvkJuaAwDFvfnfYYCN5FRyF5AA_Kap5kDhUx5Ubu9LlA3JnzaLWnMVZlHKsX2wBJHOS1yMYBcMoaOvI5PMt9t8NUKp3julq4_8UakoNQypNZw5TzPuGXVXUQ_RLodMbG0LN4hyBe0TkOZda2MhtiDOKhCQC9PswABwx3jzF3d9welJodlBpMpW9jy7stEjQ4HNsZetrS2MvqphGa4V5x6tG_gKjk-Lp9iRXq3u4Knh1wc7_Gd4fuX7ulfg0REIX09ICWzVSsXP_3o63iPeos1ufk0yNlPWLCeVPrkmmX_OJ8GvwWd7SBYYZvcOREFUGgjOBFOue24lAWO5Ih88_2E3M9WFBrmF5nQE939VruT9DpSBTCQ4Q0iv1zX_Omh2VPihAvvRM-APutIteoFK5tsv75H1bY3B3Sbsrl86ONmMAQ7mUNizUTRYh6KjQHe_JGopFQPbqs3vdofjnpWy3trSZZspvNkIdMnvBhsUjbjqs7vrEYJUXuKJuwY_q9vEtnh23jshshhsU92VtFkG8aKFe8qgBmHSvwDgrfL6AOfFbYKSBAPyoquLNZv5wHGzVeQcdOR-Dm00)
+
+### 可视化结果展示
+
+可视化结果展示链接为：
+
+[](https://asciinema.org/a/rArq2jXWLjjrdEjsFozu0cQwm)
